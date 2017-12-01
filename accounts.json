@@ -1,0 +1,69 @@
+[
+  {
+    "$id": "1",
+    "$type": "SourceTree.Api.Host.Identity.Model.IdentityAccount, SourceTree.Api.Host.Identity",
+    "IsDefault": false,
+    "Authenticate": true,
+    "HostInstance": {
+      "$id": "2",
+      "$type": "SourceTree.Host.Atlassianaccount.AtlassianAccountInstance, SourceTree.Host.AtlassianAccount",
+      "Host": {
+        "$id": "3",
+        "$type": "SourceTree.Host.Atlassianaccount.AtlassianAccountHost, SourceTree.Host.AtlassianAccount",
+        "Id": "atlassian account"
+      },
+      "BaseUrl": "https://id.atlassian.com/"
+    },
+    "Credentials": {
+      "$id": "4",
+      "$type": "SourceTree.Model.BasicAuthCredentials, SourceTree.Api.Account",
+      "Username": "",
+      "Email": null,
+      "AvatarURL": null,
+      "AuthenticationScheme": {
+        "$type": "SourceTree.Model.BasicAuthAuthenticationScheme, SourceTree.Api.Account",
+        "Value": "用户名/密码",
+        "Name": "Basic",
+        "Description": "密码",
+        "HeaderValuePrefix": "Basic",
+        "UsernameIsRequired": true
+      },
+      "Id": "",
+      "DisplayName": null
+    }
+  },
+  {
+    "$id": "5",
+    "$type": "SourceTree.Model.ScmAccount, SourceTree.Api.Host.Scm",
+    "IsDefault": false,
+    "Authenticate": true,
+    "HostInstance": {
+      "$id": "6",
+      "$type": "SourceTree.Host.GitHub.GitHubInstance, SourceTree.Host.GitHub",
+      "Host": {
+        "$id": "7",
+        "$type": "SourceTree.Host.GitHub.GitHubHost, SourceTree.Host.GitHub",
+        "Id": "github"
+      },
+      "BaseUrl": "https://github.com/",
+      "Protocol": "HTTPS"
+    },
+    "Credentials": {
+      "$id": "8",
+      "$type": "SourceTree.Model.BasicAuthCredentials, SourceTree.Api.Account",
+      "Username": "lt673701439",
+      "Email": null,
+      "AvatarURL": "https://avatars0.githubusercontent.com/u/30561094?v=4",
+      "AuthenticationScheme": {
+        "$type": "SourceTree.Model.BasicAuthAuthenticationScheme, SourceTree.Api.Account",
+        "Value": "用户名/密码",
+        "Name": "Basic",
+        "Description": "密码",
+        "HeaderValuePrefix": "Basic",
+        "UsernameIsRequired": true
+      },
+      "Id": "lt673701439",
+      "DisplayName": "凤栖梧"
+    }
+  }
+]
