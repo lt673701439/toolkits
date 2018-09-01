@@ -9,7 +9,7 @@
 
 #### 3.安装集群需要的ruby环境，详见博客
 
-#### 4.双击 start.bat 启动redis cluster
+#### 4.双击 start.bat 启动redis cluster，然后在命令窗口中根据提示输入 yes 完成启动
 #### 每次启动后都会在每个节点文件夹中生存以下文件：appendonly.aof、dump.rdb、nodes.conf
 
 #### 5.可以自行修改每个节点中redis.conf配置文件的参数
@@ -19,11 +19,11 @@
 #### 1.appendfilename 配置aof文件名称的参数，不能配成路径，只能配文件名，否则启动报错，
 #### 默认生成在启动redis.server时redis.conf所在的目录下，集群中不同节点的配置文件分开放，防止文件覆盖
 
-#### 2.logfile 配置日志文件的路径，不配置时会在启动的每个窗口中显示日志，如果配置了，启动时窗口中内容为空
+#### 2.logfile 配置日志文件的路径，不配置时会在启动的每个窗口中显示日志，如果配置了，启动时每个窗口中内容为空
 
 ### 备注：
 
-#### 本人在安装ruby时，只有将它安装在C盘时gem命令才生效，如若有相同情况请安装在C盘
+#### 在安装ruby时，只有将它安装在C盘时gem命令才生效，如若有相同情况请安装在C盘
 
 #### redis日志级别分为debug，verbose，notice，warning。在redis.conf配置文件中，通过loglevel配置选项来配置redis的日志级别。
 
